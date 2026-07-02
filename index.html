@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harmeet Singh Dua — AI/ML Engineer &amp; Python Developer</title>
+  <meta name="description" content="Harmeet Singh Dua — AI/ML Engineer and Python Developer specializing in AI agent evaluation, Prompt Engineering, RAG systems, and Multi-Agent AI. Software Engineer Intern at Wedecode.io." />
+  <meta name="keywords" content="Harmeet Singh Dua, AI Engineer, ML Engineer, Python Developer, RAG, LangChain, LLM, Multi-Agent AI, Prompt Engineering, Machine Learning" />
+  <meta name="author" content="Harmeet Singh Dua" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://harmeetsinghdua.dev/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Harmeet Singh Dua — AI/ML Engineer & Python Developer" />
+  <meta property="og:description" content="Python Developer and ML/AI professional with hands-on experience in AI agent evaluation, Prompt Engineering, RAG Systems, and Multi-Agent AI." />
+  <meta property="og:image" content="assets/og-cover.jpg" />
+  <meta property="og:url" content="https://harmeetsinghdua.dev/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Harmeet Singh Dua — AI/ML Engineer & Python Developer" />
+  <meta name="twitter:description" content="AI agent evaluation · Prompt Engineering · RAG Systems · Multi-Agent AI" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+  <!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (technical labels) -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- AOS scroll reveal -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Harmeet Singh Dua",
+    "jobTitle": "AI/ML Engineer | Python Developer",
+    "email": "harmeetsinghdua24@gmail.com",
+    "url": "https://harmeetsinghdua.dev/",
+    "sameAs": [
+      "https://www.linkedin.com/in/harmeetsinghdua/",
+      "https://github.com/harmeetsinghdua24"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Wedecode.io"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Medi-Caps University"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============ LOADER ============ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <svg class="loader-mark" viewBox="0 0 64 64" fill="none">
+        <circle cx="32" cy="32" r="3.2" class="loader-node loader-node--core"/>
+        <circle cx="12" cy="18" r="2.4" class="loader-node"/>
+        <circle cx="52" cy="16" r="2.4" class="loader-node"/>
+        <circle cx="10" cy="48" r="2.4" class="loader-node"/>
+        <circle cx="54" cy="46" r="2.4" class="loader-node"/>
+        <line x1="32" y1="32" x2="12" y2="18" class="loader-edge"/>
+        <line x1="32" y1="32" x2="52" y2="16" class="loader-edge"/>
+        <line x1="32" y1="32" x2="10" y2="48" class="loader-edge"/>
+        <line x1="32" y1="32" x2="54" y2="46" class="loader-edge"/>
+      </svg>
+      <p class="loader-text"><span class="loader-prompt">$</span> initializing<span class="loader-dots"></span></p>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ============ BACKDROP LAYERS ============ -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ============ PROGRESS BAR ============ -->
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Harmeet Singh Dua — home">
+        <span class="nav-logo-bracket">&lt;</span>HSD<span class="nav-logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about" class="nav-link"><span class="nav-link-idx">01</span>About</a>
+        <a href="#experience" class="nav-link"><span class="nav-link-idx">02</span>Experience</a>
+        <a href="#skills" class="nav-link"><span class="nav-link-idx">03</span>Skills</a>
+        <a href="#projects" class="nav-link"><span class="nav-link-idx">04</span>Projects</a>
+        <a href="#certificates" class="nav-link"><span class="nav-link-idx">05</span>Certs</a>
+        <a href="#education" class="nav-link"><span class="nav-link-idx">06</span>Education</a>
+        <a href="#contact" class="nav-link"><span class="nav-link-idx">07</span>Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="assets/resume.pdf" class="btn btn-ghost btn-sm" download>
+          <i class="fa-solid fa-arrow-down-long"></i><span>Resume</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav-mobile" id="navMobile">
+      <a href="#about" class="nav-mobile-link">About</a>
+      <a href="#experience" class="nav-mobile-link">Experience</a>
+      <a href="#skills" class="nav-mobile-link">Skills</a>
+      <a href="#projects" class="nav-mobile-link">Projects</a>
+      <a href="#certificates" class="nav-mobile-link">Certificates</a>
+      <a href="#education" class="nav-mobile-link">Education</a>
+      <a href="#achievements" class="nav-mobile-link">Achievements</a>
+      <a href="#contact" class="nav-mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+
+        <div class="hero-copy">
+          <p class="hero-eyebrow" data-aos="fade-up">
+            <span class="eyebrow-dot"></span>// currently building at wedecode.io
+          </p>
+
+          <h1 class="hero-name" data-aos="fade-up" data-aos-delay="80">
+            Harmeet Singh<br/>Dua
+          </h1>
+
+          <h2 class="hero-role">
+            <span id="typed-role"></span><span class="typed-cursor" aria-hidden="true">|</span>
+          </h2>
+
+          <p class="hero-summary" data-aos="fade-up" data-aos-delay="160">
+            Python developer and machine learning professional with hands-on industry
+            experience across <span class="hl">AI agent evaluation</span>,
+            <span class="hl">prompt engineering</span>, <span class="hl">RAG systems</span>,
+            and <span class="hl">multi-agent AI</span>. I build retrieval pipelines and
+            language-model applications that hold up outside a notebook.
+          </p>
+
+          <div class="hero-actions" data-aos="fade-up" data-aos-delay="240">
+            <a href="assets/resume.pdf" class="btn btn-primary" download>
+              <i class="fa-solid fa-file-arrow-down"></i><span>Download Resume</span>
+            </a>
+            <a href="https://www.linkedin.com/in/harmeetsinghdua/" class="btn btn-glass" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/harmeetsinghdua24" class="btn btn-glass" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github"></i><span>GitHub</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Hire Me</span><i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="hero-stats" data-aos="fade-up" data-aos-delay="320">
+            <div class="stat">
+              <span class="stat-num" data-count="2">0</span>
+              <span class="stat-label">Featured Builds</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat">
+              <span class="stat-num" data-count="18">0</span>
+              <span class="stat-label">Core Technologies</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat">
+              <span class="stat-num" data-count="100" data-suffix="%">0</span>
+              <span class="stat-label">Hands-On Builder</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-aos="fade-in" data-aos-delay="200">
+          <div class="hero-photo-frame">
+            <div class="hero-photo-glow"></div>
+            <div class="hero-photo-ph hero-photo-ph--photo" id="heroPhoto" role="img" aria-label="Portrait of Harmeet Singh Dua">
+              <i class="fa-solid fa-user-astronaut" aria-hidden="true"></i>
+              <span>Add assets/profile.jpg</span>
+            </div>
+            <span class="orbit-chip orbit-chip--1"><i class="fa-brands fa-python"></i>Python</span>
+            <span class="orbit-chip orbit-chip--2"><i class="fa-solid fa-link"></i>LangChain</span>
+            <span class="orbit-chip orbit-chip--3"><i class="fa-solid fa-database"></i>FAISS</span>
+            <span class="orbit-chip orbit-chip--4"><i class="fa-solid fa-bolt"></i>FastAPI</span>
+          </div>
+          <svg class="hero-rag-graph" id="ragGraph" viewBox="0 0 420 420" aria-hidden="true">
+            <!-- populated / animated via script.js -->
+          </svg>
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to about section">
+        <span class="scroll-cue-track"><span class="scroll-cue-dot"></span></span>
+        <span class="scroll-cue-label">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section-inner">
+        <p class="eyebrow" data-aos="fade-up">// about</p>
+        <h2 class="section-title" data-aos="fade-up">Engineering systems that retrieve,<br/>reason, and respond.</h2>
+
+        <div class="about-grid">
+          <div class="about-text" data-aos="fade-up" data-aos-delay="80">
+            <p>
+              I'm an AI/ML engineer and Python developer focused on the layer where language
+              models meet real systems — retrieval pipelines, agent orchestration, and the
+              evaluation work that decides whether an AI agent is actually trustworthy enough
+              to ship.
+            </p>
+            <p>
+              I'm currently a <strong>Software Engineer Intern at Wedecode.io</strong>, where I
+              evaluate and benchmark AI agents across business workflows, run prompt
+              engineering and LLM evaluation passes, and assess RL, Computer Use, and Tool Use
+              models for failure patterns. I'm also a <strong>B.Tech Computer Science
+              Engineering</strong> student at Medi-Caps University, Indore.
+            </p>
+            <p>
+              I care about the unglamorous parts of AI engineering: honest benchmarking, clean
+              retrieval, and code that survives contact with production traffic.
+            </p>
+          </div>
+
+          <div class="about-timeline" data-aos="fade-up" data-aos-delay="160">
+            <div class="timeline-item">
+              <span class="timeline-dot timeline-dot--active"></span>
+              <div class="timeline-content">
+                <span class="timeline-year">May 2026 — Present</span>
+                <h3>Software Engineer Intern</h3>
+                <p>Wedecode.io · AI agent evaluation, benchmarking &amp; LLM testing</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <span class="timeline-year">May 2026</span>
+                <h3>Multi-Agent RAG Assistant</h3>
+                <p>Planner / Research / Analysis / Report agents over FAISS &amp; ChromaDB</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <span class="timeline-year">2025 — 2026</span>
+                <h3>ML Phishing Detection System</h3>
+                <p>Scikit-learn classification pipeline with full preprocessing &amp; evaluation</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <span class="timeline-year">Expected May 2027</span>
+                <h3>B.Tech, Computer Science Engineering</h3>
+                <p>Medi-Caps University, Indore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section--alt" id="experience">
+      <div class="section-inner">
+        <p class="eyebrow" data-aos="fade-up">// experience</p>
+        <h2 class="section-title" data-aos="fade-up">Where the work happens.</h2>
+
+        <div class="exp-list">
+          <article class="exp-card" data-aos="fade-up">
+            <div class="exp-card-glow"></div>
+            <div class="exp-card-head">
+              <div class="exp-card-titles">
+                <h3>Software Engineer Intern</h3>
+                <p class="exp-org">Wedecode.io · Indore, India</p>
+              </div>
+              <span class="exp-period">May 2026 — Present</span>
+            </div>
+            <ul class="exp-points">
+              <li>Evaluate and benchmark <strong>AI agents</strong> across business workflows using structured test cases and performance metrics.</li>
+              <li>Perform <strong>prompt engineering</strong> and LLM evaluation to improve reasoning, response quality, and task completion.</li>
+              <li>Assess <strong>RL, Computer Use (CU), and Tool Use (TU)</strong> models by analyzing outputs and identifying failure patterns.</li>
+              <li>Conduct AI model benchmarking using accuracy, latency, reliability, and hallucination metrics.</li>
+              <li>Develop and test <strong>REST APIs</strong> for AI agent integration with backend services and external tools.</li>
+            </ul>
+            <div class="exp-tags">
+              <span>Python</span><span>LLMs</span><span>Agent Evaluation</span><span>Prompt Engineering</span><span>REST APIs</span><span>Model Benchmarking</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="section-inner">
+        <p class="eyebrow" data-aos="fade-up">// skills</p>
+        <h2 class="section-title" data-aos="fade-up">The stack behind the systems.</h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-group" data-aos="fade-up" data-aos-delay="0">
+            <h3 class="skill-group-title"><i class="fa-solid fa-terminal"></i>Languages</h3>
+            <div class="skill-bars">
+              <div class="skill-bar" data-level="94">
+                <div class="skill-bar-top"><span>Python — Advanced</span><span class="skill-pct">94%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="65">
+                <div class="skill-bar-top"><span>C — Intermediate</span><span class="skill-pct">65%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="45">
+                <div class="skill-bar-top"><span>C++ — Basic</span><span class="skill-pct">45%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="40">
+                <div class="skill-bar-top"><span>Java — Basic</span><span class="skill-pct">40%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="skill-group-title"><i class="fa-solid fa-brain"></i>ML / AI Libraries</h3>
+            <div class="skill-bars">
+              <div class="skill-bar" data-level="90">
+                <div class="skill-bar-top"><span>NumPy &amp; Pandas</span><span class="skill-pct">90%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="86">
+                <div class="skill-bar-top"><span>Scikit-learn</span><span class="skill-pct">86%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="80">
+                <div class="skill-bar-top"><span>PyTorch</span><span class="skill-pct">80%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="78">
+                <div class="skill-bar-top"><span>Matplotlib</span><span class="skill-pct">78%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="skill-group-title"><i class="fa-solid fa-layer-group"></i>AI Domains</h3>
+            <div class="skill-bars">
+              <div class="skill-bar" data-level="92">
+                <div class="skill-bar-top"><span>Machine Learning</span><span class="skill-pct">92%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="86">
+                <div class="skill-bar-top"><span>RAG Systems</span><span class="skill-pct">86%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="78">
+                <div class="skill-bar-top"><span>Deep Learning</span><span class="skill-pct">78%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="74">
+                <div class="skill-bar-top"><span>Computer Vision</span><span class="skill-pct">74%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="skill-group-title"><i class="fa-solid fa-code"></i>Tools &amp; Concepts</h3>
+            <div class="skill-bars">
+              <div class="skill-bar" data-level="85">
+                <div class="skill-bar-top"><span>FastAPI &amp; REST APIs</span><span class="skill-pct">85%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="90">
+                <div class="skill-bar-top"><span>Prompt Engineering</span><span class="skill-pct">90%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="84">
+                <div class="skill-bar-top"><span>LangChain</span><span class="skill-pct">84%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="88">
+                <div class="skill-bar-top"><span>Git &amp; GitHub</span><span class="skill-pct">88%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="skill-chip-cloud" data-aos="fade-up">
+          <span class="skill-chip"><i class="fa-brands fa-python"></i>Python</span>
+          <span class="skill-chip"><i class="fa-solid fa-bolt"></i>FastAPI</span>
+          <span class="skill-chip"><i class="fa-solid fa-link"></i>LangChain</span>
+          <span class="skill-chip"><i class="fa-solid fa-magnifying-glass"></i>RAG</span>
+          <span class="skill-chip"><i class="fa-solid fa-robot"></i>LLMs</span>
+          <span class="skill-chip"><i class="fa-solid fa-comments"></i>Prompt Engineering</span>
+          <span class="skill-chip"><i class="fa-solid fa-fire"></i>PyTorch</span>
+          <span class="skill-chip"><i class="fa-solid fa-chart-line"></i>Scikit-learn</span>
+          <span class="skill-chip"><i class="fa-solid fa-square-root-variable"></i>NumPy</span>
+          <span class="skill-chip"><i class="fa-solid fa-table"></i>Pandas</span>
+          <span class="skill-chip"><i class="fa-solid fa-chart-area"></i>Matplotlib</span>
+          <span class="skill-chip"><i class="fa-solid fa-eye"></i>OpenCV</span>
+          <span class="skill-chip"><i class="fa-solid fa-database"></i>FAISS / ChromaDB</span>
+          <span class="skill-chip"><i class="fa-solid fa-code-branch"></i>Git</span>
+          <span class="skill-chip"><i class="fa-brands fa-github"></i>GitHub</span>
+          <span class="skill-chip"><i class="fa-solid fa-network-wired"></i>REST APIs</span>
+          <span class="skill-chip"><i class="fa-solid fa-brain"></i>Machine Learning</span>
+          <span class="skill-chip"><i class="fa-solid fa-layer-group"></i>Deep Learning</span>
+          <span class="skill-chip"><i class="fa-solid fa-camera"></i>Computer Vision</span>
+          <span class="skill-chip"><i class="fa-solid fa-wand-magic-sparkles"></i>Generative AI</span>
+          <span class="skill-chip"><i class="fa-solid fa-diagram-project"></i>Agile</span>
+          <span class="skill-chip"><i class="fa-solid fa-users"></i>Team Leadership</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--alt" id="projects">
+      <div class="section-inner">
+        <p class="eyebrow" data-aos="fade-up">// projects</p>
+        <h2 class="section-title" data-aos="fade-up">Selected builds.</h2>
+
+        <div class="project-grid">
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="project-card-glow"></div>
+            <div class="project-card-top">
+              <span class="project-icon"><i class="fa-solid fa-diagram-project"></i></span>
+              <div class="project-links">
+                <a href="https://github.com/harmeetsinghdua24/Multi-agent-RAG" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <span class="project-date">May 2026</span>
+            <h3 class="project-title">Multi-Agent RAG Assistant for Research &amp; Document Analysis</h3>
+            <p class="project-desc">
+              A multi-agent AI assistant built around Retrieval-Augmented Generation for
+              document analysis and research automation. Planner, Research, Analysis, and
+              Report agents collaborate to resolve complex user queries end-to-end.
+            </p>
+            <ul class="project-highlights">
+              <li>Planner / Research / Analysis / Report agents collaborating on complex queries</li>
+              <li>Document ingestion pipeline with semantic search over FAISS &amp; ChromaDB embeddings</li>
+              <li>FastAPI REST APIs with automated report generation from retrieved insights</li>
+              <li>LangChain orchestration with prompt engineering for stronger document understanding</li>
+            </ul>
+            <div class="project-tags">
+              <span>Python</span><span>LangChain</span><span>FAISS</span><span>ChromaDB</span><span>FastAPI</span><span>LLMs</span><span>Prompt Engineering</span>
+            </div>
+            <a href="https://github.com/harmeetsinghdua24/Multi-agent-RAG" target="_blank" rel="noopener noreferrer" class="project-cta">
+              View Repository <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="project-card-glow"></div>
+            <div class="project-card-top">
+              <span class="project-icon"><i class="fa-solid fa-shield-halved"></i></span>
+              <div class="project-links">
+                <a href="https://github.com/harmeetsinghdua24/Ml-based-Phising-Classification-and-Detection-System" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <span class="project-date">2025 — 2026</span>
+            <h3 class="project-title">ML-Based Phishing Website Detection &amp; Classification System</h3>
+            <p class="project-desc">
+              A machine learning classification system that detects phishing websites based on
+              URL structure and webpage feature analysis — built end-to-end from preprocessing
+              through model evaluation.
+            </p>
+            <ul class="project-highlights">
+              <li>End-to-end preprocessing, feature extraction, model training, and evaluation</li>
+              <li>Scikit-learn classification pipeline benchmarked across multiple models</li>
+              <li>Optimized using Accuracy, Precision, Recall, and F1-Score metrics</li>
+            </ul>
+            <div class="project-tags">
+              <span>Python</span><span>Scikit-learn</span><span>Machine Learning</span>
+            </div>
+            <a href="https://github.com/harmeetsinghdua24/Ml-based-Phising-Classification-and-Detection-System" target="_blank" rel="noopener noreferrer" class="project-cta">
+              View Repository <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+        </div>
+
+        <!-- GitHub Stats -->
+        <div class="github-panel" data-aos="fade-up">
+          <div class="github-panel-head">
+            <h3><i class="fa-brands fa-github"></i> GitHub Activity</h3>
+            <a href="https://github.com/harmeetsinghdua24" target="_blank" rel="noopener noreferrer" class="github-panel-link">
+              @harmeetsinghdua24 <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <div class="github-stats-grid">
+            <img loading="lazy" src="https://github-readme-stats.vercel.app/api?username=harmeetsinghdua24&show_icons=true&hide_title=true&theme=transparent&text_color=e8ecf4&icon_color=5b8cff&title_color=5b8cff&bg_color=00000000&border_color=22283a" alt="Harmeet Singh Dua's GitHub stats" class="github-stat-img" />
+            <img loading="lazy" src="https://github-readme-stats.vercel.app/api/top-langs/?username=harmeetsinghdua24&layout=compact&hide_title=true&theme=transparent&text_color=e8ecf4&title_color=5b8cff&bg_color=00000000&border_color=22283a" alt="Harmeet Singh Dua's most used languages" class="github-stat-img" />
+          </div>
+          <div class="github-calendar-wrap">
+            <img loading="lazy" src="https://github-readme-activity-graph.vercel.app/graph?username=harmeetsinghdua24&theme=react-dark&bg_color=00000000&color=5b8cff&line=a78bfa&point=7ce0c3&hide_border=true&area=true" alt="Harmeet Singh Dua's GitHub contribution graph" class="github-calendar-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATES ============ -->
+    <section class="section" id="certificates">
+      <div class="section-inner">
+        <p class="eyebrow" data-aos="fade-up">// certificates</p>
+        <h2 class="section-title" data-aos="fade-up">Proof of focused study.</h2>
+
+        <div class="cert-grid">
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="0">
+            <span class="cert-icon"><i class="fa-solid fa-robot"></i></span>
+            <h3>Artificial Intelligence, Deep Learning &amp; Python Programming</h3>
+            <p>Infosys Springboard · 2025</p>
+          </div>
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="80">
+            <span class="cert-icon"><i class="fa-brands fa-github"></i></span>
+            <h3>Machine Learning &amp; GitHub</h3>
+            <p>Infosys Springboard · 2025</p>
+          </div>
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="160">
+            <span class="cert-icon"><i class="fa-solid fa-diagram-project"></i></span>
+            <h3>Artificial Intelligence &amp; Agile Project Management</h3>
+            <p>HP LIFE · 2025</p>
+          </div>
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="240">
+            <span class="cert-icon"><i class="fa-solid fa-chart-line"></i></span>
+            <h3>Quantitative Research Job Simulation</h3>
+            <p>J.P. Morgan · 2025</p>
+          </div>
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="320">
+            <span class="cert-icon"><i class="fa-brands fa-microsoft"></i></span>
+            <h3>Career Essentials in Data Analysis</h3>
+            <p>Microsoft · 2024</p>
+          </div>
+        </div>
+        <p class="cert-note" data-aos="fade-up">
+          <i class="fa-solid fa-circle-info"></i>
+          Credential links and verification available on
+          <a href="https://www.linkedin.com/in/harmeetsinghdua/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section--alt" id="education">
+      <div class="section-inner">
+        <p class="eyebrow" data-aos="fade-up">// education</p>
+        <h2 class="section-title" data-aos="fade-up">Foundations.</h2>
+
+        <div class="edu-card" data-aos="fade-up">
+          <span class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+          <div class="edu-content">
+            <h3>Bachelor of Technology, Computer Science Engineering</h3>
+            <p class="edu-meta">Medi-Caps University, Indore, India · Expected May 2027 · GPA 7.2/10</p>
+            <p class="edu-desc">
+              Relevant coursework: Object-Oriented Programming, Database Management Systems,
+              Operating Systems, Computer Networks, Linear Algebra, and Probability &amp;
+              Statistics. Specialized through independent projects and an industry internship
+              into applied machine learning, LLM-based systems, and AI agent engineering.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section" id="achievements">
+      <div class="section-inner">
+        <p class="eyebrow" data-aos="fade-up">// achievements</p>
+        <h2 class="section-title" data-aos="fade-up">Milestones worth marking.</h2>
+
+        <div class="achieve-grid">
+          <div class="achieve-card" data-aos="fade-up" data-aos-delay="0">
+            <span class="achieve-icon"><i class="fa-solid fa-trophy"></i></span>
+            <h3>Systango Hackathon — Runner-Up</h3>
+            <p>Placed runner-up at the Systango Hackathon, January 2025.</p>
+          </div>
+          <div class="achieve-card" data-aos="fade-up" data-aos-delay="80">
+            <span class="achieve-icon"><i class="fa-solid fa-briefcase"></i></span>
+            <h3>Industry Internship</h3>
+            <p>Secured a Software Engineer Internship at Wedecode.io, working directly on AI agent evaluation and benchmarking.</p>
+          </div>
+          <div class="achieve-card" data-aos="fade-up" data-aos-delay="160">
+            <span class="achieve-icon"><i class="fa-solid fa-cubes-stacked"></i></span>
+            <h3>Multi-Agent RAG System</h3>
+            <p>Designed and shipped a Planner/Research/Analysis/Report multi-agent RAG assistant for document analysis.</p>
+          </div>
+          <div class="achieve-card" data-aos="fade-up" data-aos-delay="240">
+            <span class="achieve-icon"><i class="fa-solid fa-building-columns"></i></span>
+            <h3>J.P. Morgan Job Simulation</h3>
+            <p>Completed the Quantitative Research Job Simulation with J.P. Morgan, 2025.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="section-inner">
+        <p class="eyebrow" data-aos="fade-up">// contact</p>
+        <h2 class="section-title" data-aos="fade-up">Let's build something that ships.</h2>
+        <p class="contact-sub" data-aos="fade-up">
+          Open to AI/ML Engineer and Python Developer roles, freelance builds, and
+          collaboration on agentic &amp; retrieval systems. Reach out — I read everything.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-up" data-aos-delay="80">
+            <a href="mailto:harmeetsinghdua24@gmail.com" class="contact-row">
+              <span class="contact-row-icon"><i class="fa-solid fa-envelope"></i></span>
+              <span>
+                <strong>Email</strong>
+                <small>harmeetsinghdua24@gmail.com</small>
+              </span>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-row-go"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/harmeetsinghdua/" target="_blank" rel="noopener noreferrer" class="contact-row">
+              <span class="contact-row-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+              <span>
+                <strong>LinkedIn</strong>
+                <small>linkedin.com/in/harmeetsinghdua</small>
+              </span>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-row-go"></i>
+            </a>
+            <a href="https://github.com/harmeetsinghdua24" target="_blank" rel="noopener noreferrer" class="contact-row">
+              <span class="contact-row-icon"><i class="fa-brands fa-github"></i></span>
+              <span>
+                <strong>GitHub</strong>
+                <small>github.com/harmeetsinghdua24</small>
+              </span>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-row-go"></i>
+            </a>
+            <a href="assets/resume.pdf" download class="contact-row">
+              <span class="contact-row-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+              <span>
+                <strong>Resume</strong>
+                <small>Download PDF</small>
+              </span>
+              <i class="fa-solid fa-download contact-row-go"></i>
+            </a>
+          </div>
+
+          <form class="contact-form" id="contactForm" data-aos="fade-up" data-aos-delay="160" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <input type="text" id="name" name="name" placeholder=" " required autocomplete="name" />
+                <label for="name">Your name</label>
+              </div>
+              <div class="form-field">
+                <input type="email" id="email" name="email" placeholder=" " required autocomplete="email" />
+                <label for="email">Your email</label>
+              </div>
+            </div>
+            <div class="form-field">
+              <input type="text" id="subject" name="subject" placeholder=" " required />
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-field">
+              <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="contactSubmit">
+              <span class="btn-label">Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo"><span class="nav-logo-bracket">&lt;</span>HSD<span class="nav-logo-bracket">/&gt;</span></span>
+        <p>AI/ML Engineer &amp; Python Developer building agentic, retrieval-grounded systems.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/harmeetsinghdua/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/harmeetsinghdua24" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="assets/resume.pdf" download aria-label="Download resume"><i class="fa-solid fa-file-arrow-down"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="footerYear"></span> Harmeet Singh Dua. Built from scratch — no template.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
